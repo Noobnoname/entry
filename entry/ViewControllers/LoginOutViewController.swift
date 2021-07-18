@@ -12,10 +12,11 @@ class LoginOutViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     
     var welcome: String!
+    private let person = Person()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = "Welcome \(String(welcome))"
+        welcomeLabel.text = "Welcome \(String(person.personName))"
     }
     
     @IBAction func logOutButton() {

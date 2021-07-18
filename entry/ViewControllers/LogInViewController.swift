@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    private let name = "Johnny"
-    private let password = "12345"
+    private let name = Person()
+    private let password = Person()
     
     override func prepare(for segue: UIStoryboardSegue,
                           sender: Any?) {
@@ -25,11 +25,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func getNameBunnon() {
-        showHintAlert(title: "Your name is", message: name)
+        showHintAlert(title: "Your name is", message: name.userName )
     }
     
     @IBAction func getPasswordButton() {
-        showHintAlert(title: "Password is", message: password)
+        showHintAlert(title: "Password is", message: password.userPassword)
     }
     
     private func showHintAlert(title: String, message: String) {
