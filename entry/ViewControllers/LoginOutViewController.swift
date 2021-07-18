@@ -15,7 +15,7 @@ class LoginOutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = welcome
+        welcomeLabel.text = "Welcome \(String(welcome))"
     }
     
     @IBAction func logOutButton() {

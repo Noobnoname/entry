@@ -19,8 +19,8 @@ class ViewController: UIViewController {
                           sender: Any?) {
         guard let welcomeName =
                 segue.destination as? LoginOutViewController else {return}
-        welcomeName.welcome =
-            "Welcome \(String(describing: userNameTF.text ?? ""))"
+        welcomeName.welcome = userNameTF.text
+            //"Welcome \(String(describing: userNameTF.text ?? ""))"
         
     }
     
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     
     @IBAction func getLogInButton() {
         if userNameTF.text == "Johnny" && passwordTF.text == "12345" {
-            getEntry()
+            performSegue(withIdentifier: "entry", sender: nil)
             userNameTF.text = ""
             passwordTF.text = ""
         } else {
@@ -51,10 +51,5 @@ class ViewController: UIViewController {
             passwordTF.text = ""
         }
     }
-    
-    private func getEntry() {
-        performSegue(withIdentifier: "entry", sender: nil)
-    }
-    
 }
 

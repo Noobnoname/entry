@@ -55,7 +55,7 @@
                                 <state key="normal" title="Forgot User Name?"/>
                                 <connections>
                                     <action selector="getPasswordButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="azg-I3-Z2l"/>
-                                    <segue destination="Sts-9z-o41" kind="presentation" identifier="entry" id="EhJ-fC-QsW"/>
+                                    <segue destination="Sts-9z-o41" kind="presentation" identifier="entry" modalPresentationStyle="fullScreen" id="EhJ-fC-QsW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,7 +89,7 @@
             <objects>
                 <viewController id="Sts-9z-o41" customClass="LoginOutViewController" customModule="entry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q4X-oP-Vzj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC6-wN-ydJ">
@@ -101,7 +101,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqp-f6-nR3">
-                                <rect key="frame" x="88" y="71" width="144" height="65"/>
+                                <rect key="frame" x="88" y="71" width="144" height="67.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
