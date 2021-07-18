@@ -9,9 +9,14 @@ import Foundation
 
 class Person: User {
     let personName = "Oleg"
-    func getInfo() -> String {
-        "efgeghrghnfhnnhhn"
-    }
+    let information =
+        """
+dfdfdfdfsfsfs
+fsdfsfdfsdfdf
+fsfsfdsfsdfdsd
+fsfdfss
+"""
+    
 }
 
 
